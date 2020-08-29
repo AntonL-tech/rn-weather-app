@@ -9,7 +9,7 @@ export default function Header({onSubmit}) {
       onSubmit(value)
       setValue('')
     } else {
-      Alert.alert('Введите город.')
+      Alert.alert('Enter the name of the city.')
     }
   }
 
@@ -19,9 +19,9 @@ export default function Header({onSubmit}) {
         style={styles.input}
         onChangeText={text => setValue(text)}
         value={value}
-        placeholder="Введите название города..."
+        placeholder="Enter the name of the city..."
         placeholderTextColor="#3949ab"/>
-      <Button title="Искать"
+      <Button title="Search"
               onPress={pressHandler}/>
     </View>
   )
